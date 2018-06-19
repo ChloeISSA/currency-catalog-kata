@@ -1,0 +1,21 @@
+mat-grid-tile {
+  background: lightblue;
+  border: 2px solid grey;
+  margin-left: 10px;
+}
+.list{
+	margin: auto;
+    width: 50%;
+}
+
+@media (max-width: 200px) {
+  #currency-list {
+    width: 90%;
+  }
+}
+
+mat-paginator {
+  display: block;
+  margin: auto;
+  margin-right: 20%;
+}

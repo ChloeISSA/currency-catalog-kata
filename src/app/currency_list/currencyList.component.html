@@ -1,0 +1,19 @@
+<div id="currency-list">
+  <h2 class="header__title">{{ 'Available Currencies' }}</h2>
+  <div class="list">
+  	<!-- <mat-form-field>
+  		<input matInput (keyup)="applyFilterById($event.target.value)" placeholder="Filter">
+	</mat-form-field> -->
+    <mat-grid-list cols="2" rowHeight="60px">
+        <mat-grid-tile *ngFor="let currency of currencies" [routerLink]="'/currency/'+currency.id">
+        	ID : {{currency.id}} Type : {{currency.attributes.currency_type}}  National Symbol : {{currency.attributes.native_symbol}}
+        </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</div>
+<div class="clear"></div><br/>
+<mat-paginator [length]="length"
+              [pageSize]="pageSize"
+              [pageSizeOptions]="pageSizeOptions"
+              (page)="pageEvent = $event">
+</mat-paginator>

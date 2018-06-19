@@ -1,0 +1,29 @@
+#currency-detail {
+  width: 50%;
+  margin-top: 2rem;
+  margin: auto;
+  width: 50%;
+}
+
+button {
+  display: block;
+  margin: auto;
+  margin-left: 60%;
+  background: lightblue;
+}
+
+@media (max-width: 600px) {
+  #currency-detail {
+    width: 90%;
+  }
+}
+
+.header__title{
+	text-align: left;
+	margin-left: 2rem;
+}
+
+mat-list-item{
+	text-align: left;
+	margin-left: 2rem;
+}
